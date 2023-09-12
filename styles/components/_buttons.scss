@@ -43,4 +43,13 @@
                   color: $white;
             }
       }
+      &.white-outline{
+            background: transparent;
+            border: 1px solid $white;
+
+            &:hover{
+                  border-color: $primary;
+                  background: $primary;
+            }
+      }
 }
