@@ -19,4 +19,46 @@ img {
 
 a {
   text-decoration: none;
+}
+
+.btn {
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+  border-radius: 4px;
+  background: #ff5a30;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  transition: 0.5s;
+}
+.btn.l-btn {
+  padding: 40px 0;
+  font-size: 16px;
+  line-height: 52px;
+}
+.btn.m-btn {
+  padding: 32px 0;
+  font-size: 14px;
+  line-height: 44px;
+}
+.btn.sm-btn {
+  padding: 24px 0;
+  font-size: 12px;
+  line-height: 36px;
+}
+.btn:hover, .btn:active {
+  background: #FC3300;
+}
+.btn:disabled {
+  opacity: 0.5;
+}
+.btn.outline {
+  background: #fff;
+  color: #ff5a30;
+  border: 1px solid #ff5a30;
+}
+.btn.outline:hover, .btn.outline:active {
+  background: #ff5a30;
+  color: #fff;
 }/*# sourceMappingURL=main.css.map */

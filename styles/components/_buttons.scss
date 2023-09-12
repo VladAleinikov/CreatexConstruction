@@ -1,0 +1,44 @@
+.btn {
+      width: fit-content;
+      text-align: center;
+      border-radius: 4px;
+      background: $primary;
+      color: $white;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+      transition: .5s;
+
+      &.l-btn {
+            padding: 40px 0;
+            font-size: 16px;
+            line-height: 52px;
+      }
+      &.m-btn{
+            padding: 32px 0;
+            font-size: 14px;
+            line-height: 44px;
+      }
+      &.sm-btn{
+            padding: 24px 0;
+            font-size: 12px;
+            line-height: 36px;
+      }
+      &:hover,
+      &:active{
+            background: #FC3300;
+      }
+      &:disabled{
+            opacity: .5;
+      }
+      &.outline{
+            background: $white;
+            color: $primary;
+            border: 1px solid $primary;
+
+            &:hover,
+            &:active{
+                  background: $primary;
+                  color: $white;
+            }
+      }
+}
