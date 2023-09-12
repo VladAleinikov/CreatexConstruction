@@ -1,0 +1,75 @@
+.header {
+      width: 100%;
+      height: 52px;
+      margin: 20px 0;
+
+      .header__container {
+            height: 100%;
+            @include flex-row;
+            justify-content: space-between;
+
+            .nav__list {
+                  @include flex-row;
+                  gap: 40px;
+
+                  .nav__item {
+                        display: block;
+                  }
+                  .nav__link {
+                        font-weight: bold;
+                        font-size: 16px;
+                        line-height: 160%;
+                        transition: 0.5s;
+                        color: $gray800;
+
+                        &:hover {
+                              color: $primary;
+                        }
+                  }
+            }
+            .header-contacts {
+                  @include flex-row;
+                  gap: 35px;
+                  height: 100%;
+
+                  .header-contacts__link {
+                        position: relative;
+                        width: min-content;
+                        margin-left: 35px;
+                        height: 100%;
+                        @include flex-col;
+                        flex-wrap: wrap;
+                        align-items: start;
+
+                        img {
+                              position: absolute;
+                              left: -45px;
+                              width: 40px;
+                              height: 100%;
+                              fill: $primary;
+                        }
+                        span {
+                              display: block;
+                              white-space: nowrap;
+                              transition: 0.5s;
+                              line-height: 150%;
+                              color: $gray800;
+                        }
+                        .link-call__title,
+                        .link-mail__title{
+                              font-size: 14px;
+                              font-weight: bold;
+                        }
+                        .link-call__tel,
+                        .link-mail__adr{
+                              font-size: 18px;
+                              font-weight: 400;
+                        }
+                        &:hover .link-call__tel,
+                        &:hover .link-mail__adr {
+                              color: $primary;
+                        }
+                  }
+            }
+      }
+}
