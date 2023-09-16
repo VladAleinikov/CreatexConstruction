@@ -1,0 +1,27 @@
+.input-block {
+      min-width: 260px;
+      height: 73px;
+      @include flex-col;
+      align-items: start;
+      justify-content: space-between;
+
+      label {
+            color: $gray900;
+            font-size: 14px;
+            font-weight: normal;
+            line-height: 150%;
+      }
+      input {
+            width: 100%;
+            padding: 11px 16px;
+            font-size: 14px;
+            line-height: 150%;
+            border: 1px solid $gray400;
+            border-radius: 4px;
+            outline: none;
+
+            &:focus{
+                  border: 1px solid $primary;
+            }
+      }
+}

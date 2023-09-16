@@ -1,0 +1,30 @@
+.request-form__container {
+      margin-top: 120px;
+      padding: 48px 75px;
+      @include flex-col;
+      box-shadow:
+            0px 4px 4px -4px rgba($gray900, 0.1),
+            0px 12px 10px -6px rgba($gray600, 0.1),
+            0px 30px 24px -10px rgba($gray600, 0.1),
+            0px 80px 80px -20px rgba($gray600, 0.1);
+
+      .request-form__title {
+            font-size: 28px;
+            margin-bottom: 32px;
+      }
+      form {
+            width: 100%;
+            @include flex-row;
+            justify-content: space-between;
+            align-items: end;
+
+            .form__inputs {
+                  @include flex-row;
+                  gap: 24px;
+
+                  .input-block:nth-child(3) {
+                        width: 414px;
+                  }
+            }
+      }
+}
