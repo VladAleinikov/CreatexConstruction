@@ -2,22 +2,6 @@
       padding-top: 100px;
       @include flex-col;
 
-      .video__title {
-            color: $gray900;
-            font-size: 46px;
-            font-weight: bold;
-            line-height: 130%;
-            text-align: center;
-            margin-bottom: 24px;
-      }
-      .video__subtitle {
-            color: $gray700;
-            font-size: 18px;
-            font-weight: normal;
-            line-height: 150%;
-            text-align: center;
-            margin-bottom: 60px;
-      }
       .video-block {
             position: relative;
             width: 100%;

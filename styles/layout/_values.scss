@@ -1,0 +1,30 @@
+.values-container{
+      @include flex-col;
+      margin-top: 180px;
+
+      .values-list{
+            width: 100%;
+            @include flex-row;
+            justify-content: space-between;
+
+            .values-list__item{
+                  max-width: 285px;
+                  height: 188px;
+                  @include flex-col;
+                  justify-content: space-between;
+
+                  img{
+                        width: 48px;
+                        height: 48px;
+                  }
+                  .item__title{
+                        font-size: 20px;
+                        margin: 0;
+                  }
+                  .item__text{
+                        font-size: 16px;
+                        margin: 0;
+                  }
+            }
+      }
+}
