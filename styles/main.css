@@ -28,6 +28,7 @@ a {
   width: -moz-fit-content;
   width: fit-content;
   text-align: center;
+  text-transform: uppercase;
   border-radius: 4px;
   background: #ff5a30;
   color: #fff;
@@ -231,6 +232,8 @@ a {
 
 .services__item {
   display: block;
+  border-radius: 4px;
+  overflow: hidden;
 }
 
 .services__item a {

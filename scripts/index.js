@@ -1,7 +1,7 @@
 // slider
 const slider = document.getElementById("hero__slider");
-const left = document.getElementById("slide-to-left");
-const right = document.getElementById("slide-to-right");
+const left = document.getElementById("slide-hero-to-left");
+const right = document.getElementById("slide-hero-to-right");
 const counter = [...document.getElementsByClassName("slider-count-item")];
 let slideId = 0;
 
