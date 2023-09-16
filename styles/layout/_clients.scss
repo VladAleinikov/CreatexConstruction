@@ -1,0 +1,15 @@
+.clients-container{
+      margin-top: 200px;
+
+      .clients-title{
+            margin-bottom: 60px;
+      }
+      .clients-list{
+            @include flex-row;
+            justify-content: space-between;
+      
+            .client-item{
+                  display: block;
+            }
+      }
+}

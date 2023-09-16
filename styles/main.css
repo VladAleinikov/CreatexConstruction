@@ -984,4 +984,35 @@ a {
 .portfolio-container .portfolio__learn-more {
   margin: 0;
 }
+
+.clients-container {
+  margin-top: 200px;
+}
+
+.clients-container .clients-title {
+  margin-bottom: 60px;
+}
+
+.clients-container .clients-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.clients-container .clients-list .client-item {
+  display: block;
+}
 /*# sourceMappingURL=main.css.map */
