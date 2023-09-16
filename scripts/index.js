@@ -1,3 +1,4 @@
+// slider
 const slider = document.getElementById("hero__slider");
 const left = document.getElementById("slide-to-left");
 const right = document.getElementById("slide-to-right");
@@ -68,3 +69,19 @@ setInterval(() => {
       }
 
 }, 5000);
+
+// video
+videoBlock = document.getElementById("video-block");
+player = document.getElementById("video-player");
+playBtn = document.getElementById("video-block__play");
+
+playBtn.addEventListener("click", e => {
+      videoBlock.classList.add("is-playing");
+      player.setAttribute("controls", "")
+      player.play()
+})
+player.addEventListener("pause", e => {
+      videoBlock.classList.remove("is-playing");
+      player.removeAttribute("controls")
+
+})

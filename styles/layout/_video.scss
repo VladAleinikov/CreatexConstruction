@@ -55,9 +55,11 @@
             &.is-playing{
                   .video-block__play{
                         opacity: 0;
+                        visibility: hidden;
                   }
                   &::before{
                         opacity: 0;
+                        visibility: hidden;
                   }
             }
       }
