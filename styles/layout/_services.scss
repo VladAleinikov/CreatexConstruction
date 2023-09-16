@@ -1,0 +1,13 @@
+.services{
+      background: url(../../assets/background/services-section-bg.png);
+      background-position: top -212px ;
+
+      .services-container{
+            margin-top: 120px;
+
+            .services__list{
+                  @include flex-row;
+                  justify-content: space-between;
+            }
+      }
+}

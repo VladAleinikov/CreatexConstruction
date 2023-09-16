@@ -116,7 +116,7 @@ a {
   padding-bottom: 355px;
   width: 100%;
   height: 100%;
-  background-image: url(../../assets/slide-bg.jpg);
+  background-image: url(../../assets/background/slide-bg.jpg);
 }
 
 .hero__slider .slider__slide .slider__title {
@@ -227,6 +227,118 @@ a {
 
 .input-block input:focus {
   border: 1px solid #ff5a30;
+}
+
+.services__item {
+  display: block;
+}
+
+.services__item a {
+  position: relative;
+  width: 285px;
+  height: 285px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 24px;
+  -webkit-box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.1), 0px 12px 10px -6px rgba(154, 156, 165, 0.1), 0px 30px 24px -10px rgba(154, 156, 165, 0.1), 0px 80px 80px -20px rgba(154, 156, 165, 0.1);
+          box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.1), 0px 12px 10px -6px rgba(154, 156, 165, 0.1), 0px 30px 24px -10px rgba(154, 156, 165, 0.1), 0px 80px 80px -20px rgba(154, 156, 165, 0.1);
+}
+
+.services__item a .item-icon {
+  width: 52px;
+  height: 52px;
+  z-index: 100;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.services__item a .item-icon path {
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.services__item a .item-title {
+  font-size: 20px;
+  z-index: 100;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.services__item a .item__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: 10;
+}
+
+.services__item a .item__background::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #1e212c;
+  opacity: 0.6;
+}
+
+.services__item a .item__background img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.services__item a:hover {
+  -webkit-box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.1), 0px 12px 10px -6px rgba(30, 33, 44, 0.1), 0px 26px 24px -10px rgba(30, 33, 44, 0.1), 0px 60px 80px -20px rgba(30, 33, 44, 0.16);
+          box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.1), 0px 12px 10px -6px rgba(30, 33, 44, 0.1), 0px 26px 24px -10px rgba(30, 33, 44, 0.1), 0px 60px 80px -20px rgba(30, 33, 44, 0.16);
+}
+
+.services__item a:hover .item-icon path {
+  fill: #fff;
+}
+
+.services__item a:hover .item-title {
+  color: #fff;
+}
+
+.services__item a:hover .item__background {
+  opacity: 1;
+}
+
+.learn-more {
+  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.learn-more .learn-more__title {
+  font-size: 28px;
+  margin: 0;
+  padding-right: 40px;
 }
 
 .header {
@@ -700,5 +812,33 @@ a {
 
 .request-form__container form .form__inputs .input-block:nth-child(3) {
   width: 414px;
+}
+
+.services {
+  background: url(../../assets/background/services-section-bg.png);
+  background-position: top -212px;
+}
+
+.services .services-container {
+  margin-top: 120px;
+}
+
+.services .services-container .services__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=main.css.map */

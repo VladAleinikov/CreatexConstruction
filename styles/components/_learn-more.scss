@@ -1,0 +1,10 @@
+.learn-more {
+      margin-top: 80px;
+      @include flex-row;
+
+      .learn-more__title {
+            font-size: 28px;
+            margin: 0;
+            padding-right: 40px;
+      }
+}
