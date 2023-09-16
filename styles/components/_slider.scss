@@ -44,3 +44,27 @@
             }
       }
 }
+
+      .slider__btn {
+            @include flex-col;
+            width: 48px;
+            height: 48px;
+            border-radius: 100%;
+            background: $white;
+            fill: $gray800;
+            transition: 0.5s;
+            svg path {
+                  transition: 0.5s;
+            }
+
+            &:hover {
+                  background: $primary;
+                  svg path {
+                        fill: $white;
+                  }
+            }
+            &.disabled {
+                  opacity: 0.5;
+                  pointer-events: none;
+            }
+      }

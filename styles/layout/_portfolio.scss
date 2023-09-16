@@ -1,0 +1,28 @@
+.portfolio-container{
+      margin-top: 200px;
+      @include flex-row;
+      justify-content: space-between;
+      align-items: end;
+      flex-wrap: wrap;
+
+      .portfolio__title{
+            max-width: 750px;
+            text-align: start;
+      }
+      .slider-btns{
+            @include flex-row;
+
+      }
+      .portfolio__slider{
+            margin-top: 48px;
+            padding-bottom: 80px;
+            @include flex-row;
+            overflow: hidden;
+            justify-content: start;
+            gap: 30px;
+            width: 100%;
+      }
+      .portfolio__learn-more{
+            margin-top: 0;
+      }
+}
