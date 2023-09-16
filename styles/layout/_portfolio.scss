@@ -1,28 +1,35 @@
-.portfolio-container{
+.portfolio-container {
+      position: relative;
       margin-top: 200px;
       @include flex-row;
       justify-content: space-between;
       align-items: end;
       flex-wrap: wrap;
+      overflow: hidden;
 
-      .portfolio__title{
+      .portfolio__title {
             max-width: 750px;
             text-align: start;
       }
-      .slider-btns{
+      .slider-btns {
             @include flex-row;
-
       }
-      .portfolio__slider{
-            margin-top: 48px;
-            padding-bottom: 80px;
-            @include flex-row;
+      .portfolio__slider {
             overflow: hidden;
-            justify-content: start;
-            gap: 30px;
-            width: 100%;
+            
+            .portfolio__slides {
+                  position: relative;
+                  left: 0%;
+                  margin-top: 48px;
+                  padding-bottom: 80px;
+                  @include flex-row;
+                  justify-content: start;
+                  gap: 30px;
+                  width: 100%;
+                  transition: .5s;
+            }
       }
-      .portfolio__learn-more{
-            margin-top: 0;
+      .portfolio__learn-more {
+            margin: 0;
       }
 }

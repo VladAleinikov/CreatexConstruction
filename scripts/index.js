@@ -1,4 +1,4 @@
-// slider
+// slider hero
 const slider = document.getElementById("hero__slider");
 const left = document.getElementById("slide-hero-to-left");
 const right = document.getElementById("slide-hero-to-right");
@@ -84,4 +84,27 @@ player.addEventListener("pause", e => {
       videoBlock.classList.remove("is-playing");
       player.removeAttribute("controls")
 
+})
+
+// slider portfolio
+const portfolioSlider = document.getElementById("portfolio__slides");
+const portfolioLeft = document.getElementById("slide-portfolio-to-left");
+const portfolioRight = document.getElementById("slide-portfolio-to-right");
+let portfolioSlide = 0;
+
+portfolioLeft.addEventListener("click", e => {
+      portfolioRight.classList.remove("disabled")
+      portfolioSlide -= 1;
+      portfolioSlider.style.left = (portfolioSlide * -420) + "px";
+      if (portfolioSlide == 0) {
+            portfolioLeft.classList.add("disabled")
+      }
+})
+portfolioRight.addEventListener("click", e => {
+      portfolioLeft.classList.remove("disabled")
+      portfolioSlide += 1;
+      portfolioSlider.style.left = (portfolioSlide * -420) + "px";
+      if (portfolioSlide == 3) {
+            portfolioRight.classList.add("disabled")
+      }
 })
