@@ -1,0 +1,66 @@
+.news-container {
+      margin-top: 180px;
+
+      .news__title {
+            margin-bottom: 60px;
+      }
+      .news__list {
+            display: grid;
+            grid-template-columns: 705px 495px;
+            grid-template-rows: 255px 255px;
+            grid-template-areas: "a b" "a c";
+            gap: 30px;
+
+            .news__item {
+                  display: block;
+            }
+            .post {
+                  @include flex-col;
+                  align-items: start;
+                  padding: 0 24px;
+                  padding-bottom: 24px;
+
+                  .post__preview {
+                        width: calc(100% + 48px);
+                        margin: 0 -24px;
+                  }
+                  .post__title {
+                        font-size: 20px;
+                        font-weight: bold;
+                        line-height: 150%;
+                        margin: 0;
+                        margin-top: 24px;
+                  }
+                  .post__meta {
+                        margin-top: 12px;
+
+                        &, & span {
+                              color: $gray700;
+                              font-size: 14px;
+                              font-weight: normal;
+                              line-height: 150%;
+                        }
+                        svg {
+                              position: relative;
+                              bottom: -3px;
+                        }
+                  }
+                  .post__text{
+                        color: $gray800;
+                        font-size: 16px;
+                        font-weight: normal;
+                        line-height: 160%;
+                        margin-top: 16px;
+                  }
+            }
+            .news__item:nth-child(1) {
+                  grid-area: a;
+            }
+            .news__item:nth-child(2) {
+                  grid-area: b;
+            }
+            .news__item:nth-child(3) {
+                  grid-area: c;
+            }
+      }
+}
