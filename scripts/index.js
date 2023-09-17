@@ -108,3 +108,27 @@ portfolioRight.addEventListener("click", e => {
             portfolioRight.classList.add("disabled")
       }
 })
+
+// scroll top
+const scrollTop = document.getElementById("scroll-top");
+document.addEventListener("scroll", e => {
+      if (window.scrollY >= 200) {
+            scrollTop.classList.add("active")
+      }
+      else {
+            scrollTop.classList.remove("active")
+      }
+})
+// scroll animation
+const smoothLinks = document.querySelectorAll('a[href^="#"]');
+for (let smoothLink of smoothLinks) {
+      smoothLink.addEventListener('click', function (e) {
+            e.preventDefault();
+            const id = smoothLink.getAttribute('href');
+
+            document.querySelector(id).scrollIntoView({
+                  behavior: 'smooth',
+                  block: 'start'
+            });
+      });
+};

@@ -1,0 +1,27 @@
+.scroll-top {
+      @include flex-row;
+      align-items: end;
+      gap: 18px;
+      position: fixed;
+      bottom: 80px;
+      right: calc((100% - 1230px) / 2);
+      opacity: 0;
+      visibility: hidden;
+      transition: .5s;
+      z-index: 100;
+
+      .scroll-top__text {
+            color: $black;
+            font-size: 14px;
+            font-weight: normal;
+            line-height: 150%;
+      }
+      .scroll-top__btn {
+            padding: 15px 12px;
+            line-height: normal;
+      }
+      &.active{
+            opacity: 1;
+            visibility: visible;
+      }
+}
