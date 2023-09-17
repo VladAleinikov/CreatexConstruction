@@ -1127,4 +1127,94 @@ a {
   bottom: 0;
   right: 0;
 }
+
+.figures {
+  position: relative;
+}
+
+.figures .figures-bg {
+  position: absolute;
+  top: 0;
+  left: -500px;
+  width: 1065.947px;
+  height: 858.82px;
+  -webkit-transform: rotate(126.97deg);
+          transform: rotate(126.97deg);
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.container-figures {
+  margin-top: 120px;
+}
+
+.container-figures .figures__list {
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 48px;
+}
+
+.container-figures .figures__list .figures__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+.container-figures .figures__list .figures__item .circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  width: 148px;
+  height: 148px;
+}
+
+.container-figures .figures__list .figures__item .circle svg {
+  position: absolute;
+}
+
+.container-figures .figures__list .figures__item .circle .circle__number {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 150%;
+}
+
+.container-figures .figures__list .figures__item .item__text {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 150%;
+}
 /*# sourceMappingURL=main.css.map */

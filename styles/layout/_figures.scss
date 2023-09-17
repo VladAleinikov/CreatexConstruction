@@ -1,0 +1,47 @@
+.figures {
+      position: relative;
+      .figures-bg {
+            position: absolute;
+            top: 0;
+            left: -500px;
+            width: 1065.947px;
+            height: 858.82px;
+            transform: rotate(126.97deg);
+            flex-shrink: 0;
+      }
+}
+.container-figures {
+      margin-top: 120px;
+
+      .figures__list {
+            margin-top: 60px;
+            @include flex-row;
+            gap: 48px;
+
+            .figures__item {
+                  @include flex-col;
+                  gap: 20px;
+
+                  .circle {
+                        @include flex-row;
+                        position: relative;
+                        width: 148px;
+                        height: 148px;
+
+                        svg {
+                              position: absolute;
+                        }
+                        .circle__number {
+                              font-size: 32px;
+                              font-weight: bold;
+                              line-height: 150%;
+                        }
+                  }
+                  .item__text {
+                        font-size: 14px;
+                        font-weight: normal;
+                        line-height: 150%;
+                  }
+            }
+      }
+}
