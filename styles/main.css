@@ -1144,11 +1144,11 @@ a {
       flex-shrink: 0;
 }
 
-.container-figures {
+.figures-container {
   margin-top: 120px;
 }
 
-.container-figures .figures__list {
+.figures-container .figures__list {
   margin-top: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1166,7 +1166,7 @@ a {
   gap: 48px;
 }
 
-.container-figures .figures__list .figures__item {
+.figures-container .figures__list .figures__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1183,7 +1183,7 @@ a {
   gap: 20px;
 }
 
-.container-figures .figures__list .figures__item .circle {
+.figures-container .figures__list .figures__item .circle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1202,17 +1202,17 @@ a {
   height: 148px;
 }
 
-.container-figures .figures__list .figures__item .circle svg {
+.figures-container .figures__list .figures__item .circle svg {
   position: absolute;
 }
 
-.container-figures .figures__list .figures__item .circle .circle__number {
+.figures-container .figures__list .figures__item .circle .circle__number {
   font-size: 32px;
   font-weight: bold;
   line-height: 150%;
 }
 
-.container-figures .figures__list .figures__item .item__text {
+.figures-container .figures__list .figures__item .item__text {
   font-size: 14px;
   font-weight: normal;
   line-height: 150%;
