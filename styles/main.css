@@ -1274,6 +1274,8 @@ a {
   line-height: 150%;
   margin: 0;
   margin-top: 24px;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .news-container .news__list .post .post__meta {
@@ -1298,6 +1300,10 @@ a {
   font-weight: normal;
   line-height: 160%;
   margin-top: 16px;
+}
+
+.news-container .news__list .post:hover .post__title {
+  color: #ff5a30;
 }
 
 .news-container .news__list .news__item:nth-child(1) {

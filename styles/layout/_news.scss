@@ -30,6 +30,7 @@
                         line-height: 150%;
                         margin: 0;
                         margin-top: 24px;
+                        transition: .5s;
                   }
                   .post__meta {
                         margin-top: 12px;
@@ -51,6 +52,9 @@
                         font-weight: normal;
                         line-height: 160%;
                         margin-top: 16px;
+                  }
+                  &:hover .post__title{
+                        color: $primary;
                   }
             }
             .news__item:nth-child(1) {
