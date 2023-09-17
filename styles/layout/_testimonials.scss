@@ -1,0 +1,29 @@
+.testimonials-container{
+      margin-top: 170px;
+      display: grid;
+      grid-template-columns: 600px 495px;
+      grid-template-rows: 120px 250px 180px;
+      grid-template-areas: "a b" "c b" ". b";
+      justify-content: space-between;
+
+      .testimonials-title{
+            grid-area: a;
+            min-width: 600px;
+      }
+      .testimonials-img{
+            grid-area: b;
+            width: 495px;
+      }
+      .testimonials-slider{
+            grid-area: c;
+            position: relative;
+            overflow: hidden;
+
+            .slider-btns{
+                  @include flex-row;
+                  position: absolute;
+                  bottom: 0;
+                  right: 0;
+            }
+      }
+}

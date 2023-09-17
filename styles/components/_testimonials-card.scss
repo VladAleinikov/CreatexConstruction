@@ -1,0 +1,36 @@
+.testimonials-slides{
+      @include flex-row;
+      flex-wrap: nowrap;
+      justify-content: start;
+
+      .slider__slide{
+            min-width: 100%;
+
+            img{
+                  width: 72px;
+                  height: 72px;
+                  margin-bottom: 24px;
+            }
+            .review__text{
+                  color: $gray800;
+                  font-size: 16px;
+                  font-weight: normal;
+                  line-height: 160%;
+                  text-align: start;
+                  margin-bottom: 24px;
+            }
+            .author__name{
+                  color: $gray900;
+                  font-size: 16px;
+                  font-weight: bold;
+                  line-height: 160%;
+                  margin-bottom: 4px;
+            }
+            .author__position{
+                  columns: $gray700;
+                  font-size: 14px;
+                  font-weight: normal;
+                  line-height: 150%;
+            }
+      }
+}
