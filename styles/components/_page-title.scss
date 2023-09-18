@@ -1,0 +1,43 @@
+.page-title__container {
+      margin-top: 80px;
+      @include flex-col;
+      align-items: start;
+
+      .breadcrumb {
+            color: $gray600;
+            font-size: 14px;
+            font-weight: normal;
+            line-height: 150%;
+
+            a {
+                  color: $gray800;
+                  transition: 0.5s;
+
+                  &:hover {
+                        color: $primary;
+                  }
+            }
+      }
+      .page-title__title {
+            margin-top: 40px;
+            color: $gray900;
+            font-size: 72px;
+            font-weight: bold;
+            line-height: 130%;
+            letter-spacing: 1px;
+      }
+      .page-title__subtitle {
+            color: $gray700;
+            font-size: 20px;
+            max-width: 600px;
+            text-align: start;
+      }
+      .page-title__background {
+            position: absolute;
+            right: 0;
+            top: -20px;
+            width: 975px;
+            height: 600px;
+            z-index: -1;
+      }
+}
