@@ -1,0 +1,40 @@
+.services-page__container {
+      margin-top: 300px;
+      margin-bottom: 60px;
+
+      .services-page__list {
+            @include flex-col;
+            gap: 120px;
+
+            .services-page__item {
+                  @include flex-row;
+                  width: 100%;
+                  gap: 80px;
+
+                  .item__preview {
+                        width: 575px;
+                        height: 420px;
+                  }
+                  .item__content{
+
+                        .item__title{
+                              margin-bottom: 24px;
+                              font-size: 32px;
+                              font-weight: bold;
+                              text-align: start;
+                        }
+                        .item__text{
+                              margin-bottom: 48px;
+                              color: $gray700;
+                              font-size: 16px;
+                              font-weight: normal;
+                              line-height: 160%;
+                        }
+                  }
+
+                  &:nth-child(2n){
+                        flex-direction: row-reverse;
+                  }
+            }
+      }
+}

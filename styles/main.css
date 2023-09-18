@@ -1848,4 +1848,71 @@ footer {
       align-self: flex-start;
   font-size: 12px;
 }
+
+.services-page__container {
+  margin-top: 300px;
+  margin-bottom: 60px;
+}
+
+.services-page__container .services-page__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 120px;
+}
+
+.services-page__container .services-page__list .services-page__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  gap: 80px;
+}
+
+.services-page__container .services-page__list .services-page__item .item__preview {
+  width: 575px;
+  height: 420px;
+}
+
+.services-page__container .services-page__list .services-page__item .item__content .item__title {
+  margin-bottom: 24px;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: start;
+}
+
+.services-page__container .services-page__list .services-page__item .item__content .item__text {
+  margin-bottom: 48px;
+  color: #787a80;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 160%;
+}
+
+.services-page__container .services-page__list .services-page__item:nth-child(2n) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
 /*# sourceMappingURL=main.css.map */
