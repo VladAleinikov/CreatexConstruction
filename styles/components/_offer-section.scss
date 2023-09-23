@@ -1,0 +1,55 @@
+.offer__container {
+      @include flex-row;
+      justify-content: space-between;
+      margin-top: 300px;
+
+      img {
+            max-width: 705px;
+      }
+      .offer__content {
+            max-width: 420px;
+            @include flex-col;
+            align-items: start;
+
+            .offer__list {
+                  .offer__item {
+                        padding-left: 45px;
+                        position: relative;
+                        @include flex-col;
+                        justify-content: start;
+                        max-height: 85px;
+                        overflow: hidden;
+                        transition: .5s;
+
+                        .item__title {
+                              text-align: start;
+                              font-size: 28px;
+                              margin-bottom: 12px;
+                        }
+                        .item__subtitle {
+                              text-align: start;
+                              font-size: 16px;
+                              margin-bottom: 24px;
+                        }
+                        &::after, &::before{
+                              content: '';
+                              position: absolute;
+                              left: 0px;
+                              top: 20px;
+                              width: 24px;
+                              height: 2px;
+                              transition: .5s;
+                              background: $primary;
+
+                        }
+                        &.active {
+                              max-height: 200px;
+
+                              &::after{
+                                    rotate: 90deg;
+                              }
+                        }
+                  }
+            }
+      }
+}
