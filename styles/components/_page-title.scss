@@ -20,6 +20,8 @@
       }
       .page-title__title {
             margin-top: 40px;
+            max-width: 600px;
+            text-align: start;
             color: $gray900;
             font-size: 72px;
             font-weight: bold;
