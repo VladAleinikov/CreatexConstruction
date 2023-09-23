@@ -13,6 +13,7 @@
 
             .offer__list {
                   .offer__item {
+                        cursor: pointer;
                         padding-left: 45px;
                         position: relative;
                         @include flex-col;
