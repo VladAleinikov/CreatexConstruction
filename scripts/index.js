@@ -238,3 +238,33 @@ try {
 } catch (error) {
 
 }
+
+
+// slider gallery project page
+const thumbnails = document.getElementsByClassName("gallery__thumbnails")[0];
+const galllerySlider = document.getElementsByClassName("gallery__slider")[0];
+const slideGalleryLeft = document.getElementById("slide-gallery-to-left");
+const slideGalleryRight = document.getElementById("slide-gallery-to-right");
+let gallerySlide = 1;
+try {
+      slideGalleryRight.addEventListener("click", e => {
+            slideGalleryLeft.classList.remove("disabled");
+            gallerySlide += 1;
+            galllerySlider.style.left = (gallerySlide - 1) * -100 + "%";
+            thumbnails.setAttribute("show", gallerySlide)
+            if (gallerySlide == 6) {
+                  slideGalleryRight.classList.add("disabled");
+            }
+      })
+      slideGalleryLeft.addEventListener("click", e => {
+            slideGalleryRight.classList.remove("disabled");
+            gallerySlide -= 1;
+            galllerySlider.style.left = (gallerySlide - 1) * -100 + "%";
+            thumbnails.setAttribute("show", gallerySlide)
+            if (gallerySlide == 1) {
+                  slideGalleryLeft.classList.add("disabled");
+            }
+      })
+} catch (error) {
+
+}

@@ -1,0 +1,86 @@
+.gallery-container {
+      position: relative;
+      @include flex-col;
+      align-items: start;
+      gap: 20px;
+      padding: 0;
+      max-width: 1230px;
+      overflow: hidden;
+
+      .slider__btn {
+            position: absolute;
+            top: calc(50% - 75px);
+      }
+      #slide-gallery-to-left {
+            left: 32px;
+      }
+      #slide-gallery-to-right {
+            right: 32px;
+      }
+      .gallery__slider {
+            position: relative;
+            @include flex-row;
+            justify-content: start;
+            left: 0%;
+            transition: .5s;
+
+      }
+      .gallery__thumbnails {
+            position: relative;
+            width: 700px;
+            height: 100px;
+            @include flex-row;
+
+            &:after,
+            &:before {
+                  content: "";
+                  position: absolute;
+                  height: 100%;
+                  opacity: 0.6;
+                  background: #fff;
+                  transition: 0.5s;
+            }
+            &:after {
+                  left: 0;
+            }
+            &:before {
+                  right: 0;
+            }
+            &[show="1"]::after{
+                  width: calc(117px * 0);
+            }
+            &[show="1"]::before{
+                  width: calc(117px * 5);
+            }
+            &[show="2"]::after{
+                  width: calc(117px * 1);
+            }
+            &[show="2"]::before{
+                  width: calc(117px * 4);
+            }
+            &[show="3"]::after{
+                  width: calc(117px * 2);
+            }
+            &[show="3"]::before{
+                  width: calc(117px * 3);
+            }
+            &[show="4"]::after{
+                  width: calc(117px * 3);
+            }
+            &[show="4"]::before{
+                  width: calc(117px * 2);
+            }
+            &[show="5"]::after{
+                  width: calc(117px * 4);
+            }
+            &[show="5"]::before{
+                  width: calc(117px * 1);
+            }
+            &[show="6"]::after{
+                  width: calc(117px * 5);
+            }
+            &[show="6"]::before{
+                  width: calc(117px * 0);
+            }
+      }
+}
