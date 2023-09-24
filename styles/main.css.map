@@ -37,7 +37,8 @@
         "layout/_pricing.scss",
         "layout/_tabs.scss",
         "layout/_offer.scss",
-        "layout/_potfolio-page.scss"
+        "layout/_potfolio-page.scss",
+        "layout/_gallery.scss"
     ],
     "names": [],
     "file": "main.css"
