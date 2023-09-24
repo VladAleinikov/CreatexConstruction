@@ -1282,4 +1282,92 @@ footer {
 }
 .services-page__container .services-page__list .services-page__item:nth-child(2n) {
   flex-direction: row-reverse;
+}
+
+.steps__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: start;
+  margin-top: 180px;
+}
+.steps__container .steps__title {
+  margin-bottom: 60px;
+}
+.steps__container .steps__list {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  align-items: start;
+}
+.steps__container .steps__list .steps__item {
+  cursor: default;
+  max-width: 285px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: start;
+  align-items: start;
+}
+.steps__container .steps__list .steps__item .item__count {
+  position: relative;
+  color: #d7dadd;
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 130%;
+  margin-bottom: 16px;
+  transition: 0.5s;
+}
+.steps__container .steps__list .steps__item .item__count::before, .steps__container .steps__list .steps__item .item__count:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 0;
+  height: 0;
+  background: #ff5a30;
+  border-radius: 100%;
+  opacity: 0.12;
+  transition: 0.5s;
+}
+.steps__container .steps__list .steps__item .item__count:after {
+  opacity: 0.06;
+}
+.steps__container .steps__list .steps__item .item__title {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+.steps__container .steps__list .steps__item .item__subtitle {
+  font-size: 16px;
+  text-align: start;
+}
+.steps__container .steps__list .steps__item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 30px;
+  width: 209px;
+  border-bottom: 1px dashed #d7dadd;
+}
+.steps__container .steps__list .steps__item:hover .item__count {
+  color: #ff5a30;
+}
+.steps__container .steps__list .steps__item:hover .item__count::before {
+  top: calc(50% - 42px);
+  left: calc(50% - 42px);
+  width: 84px;
+  height: 84px;
+}
+.steps__container .steps__list .steps__item:hover .item__count::after {
+  top: calc(50% - 58px);
+  left: calc(50% - 58px);
+  width: 116px;
+  height: 116px;
 }/*# sourceMappingURL=main.css.map */

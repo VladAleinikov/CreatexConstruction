@@ -1,0 +1,83 @@
+.steps__container {
+      @include flex-col;
+      align-items: start;
+      margin-top: 180px;
+
+      .steps__title {
+            margin-bottom: 60px;
+      }
+      .steps__list {
+            width: 100%;
+            @include flex-row;
+            justify-content: space-between;
+            align-items: start;
+
+            .steps__item {
+                  cursor: default;
+                  max-width: 285px;
+                  position: relative;
+                  @include flex-col;
+                  justify-content: start;
+                  align-items: start;
+
+                  .item__count {
+                        position: relative;
+                        color: $gray400;
+                        font-size: 46px;
+                        font-weight: 700;
+                        line-height: 130%;
+                        margin-bottom: 16px;
+                        transition: 0.5s;
+
+                        &::before, &:after {
+                              content: "";
+                              position: absolute;
+                              left: 50%;
+                              top: 50%;
+                              width: 0;
+                              height: 0;
+                              background: $primary;
+                              border-radius: 100%;
+                              opacity: 0.12;
+                              transition: .5s;
+                        }
+                        &:after{
+                              opacity: 0.06;
+                        }
+                  }
+                  .item__title {
+                        font-size: 20px;
+                        margin-bottom: 8px;
+                  }
+                  .item__subtitle {
+                        font-size: 16px;
+                        text-align: start;
+                  }
+                  &::after {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        height: 30px;
+                        width: 209px;
+                        border-bottom: 1px dashed $gray400;
+                  }
+                  &:hover .item__count {
+                        color: $primary;
+
+                        &::before{
+                              top: calc(50% - 42px);
+                              left:  calc(50% - 42px);
+                              width: 84px;
+                              height: 84px;
+                        }
+                        &::after{
+                              top:  calc(50% - 58px);
+                              left:  calc(50% - 58px);
+                              width: 116px;
+                              height: 116px;
+                        }
+                  }
+            }
+      }
+}
