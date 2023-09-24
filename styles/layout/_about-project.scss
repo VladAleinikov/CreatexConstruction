@@ -1,0 +1,44 @@
+.project-about-container {
+      margin-top: 100px;
+      @include flex-row;
+      justify-content: space-between;
+
+      .project-about__goal {
+            max-width: 600px;
+            @include flex-col;
+            align-items: start;
+
+            .goal__title {
+                  margin-bottom: 40px;
+            }
+            .goal__description {
+                  color: $gray800;
+                  font-size: 18px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: 150%;
+            }
+      }
+      .project-about__info {
+            @include flex-col;
+            align-items: start;
+            gap: 16px;
+
+            .info__item {
+                  @include flex-row;
+                  gap: 32px;
+
+                  .item__title {
+                        text-align: start;
+                        width: 100px;
+                        margin-bottom: 0;
+                        font-size: 16px;
+                  }
+                  .item__subtitle {
+                        text-align: start;
+                        font-size: 16px;
+                        margin-bottom: 0;
+                  }
+            }
+      }
+}
