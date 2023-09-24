@@ -1,0 +1,44 @@
+.portfolio-page-container {
+      margin-top: 120px;
+
+      .portfolio-page__list {
+            @include flex-row;
+            justify-content: start;
+            flex-wrap: wrap;
+            gap: 30px;
+
+            li {
+                  margin-bottom: 30px;
+            }
+      }
+      .portfolio-page__load-more {
+            cursor: pointer;
+            margin: auto;
+            width: fit-content;
+            margin-top: 60px;
+            @include flex-row;
+
+            img {
+                  margin-right: 16px;
+                  width: 24px;
+                  height: 24px;
+                  transition: 0.5s;
+            }
+            p {
+                  display: inline;
+                  color: $gray800;
+                  font-size: 16px;
+                  font-weight: 700;
+                  line-height: 160%;
+                  transition: 0.5s;
+            }
+            &:hover {
+                  p {
+                        color: $primary;
+                  }
+                  img {
+                        transform: rotate(-210deg);
+                  }
+            }
+      }
+}

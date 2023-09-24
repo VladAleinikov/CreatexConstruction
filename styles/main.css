@@ -2374,4 +2374,83 @@ footer {
 .offer-container .offer__content .offer__list .offer__item.active::after {
   rotate: 90deg;
 }
+
+.portfolio-page-container {
+  margin-top: 120px;
+}
+
+.portfolio-page-container .portfolio-page__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+}
+
+.portfolio-page-container .portfolio-page__list li {
+  margin-bottom: 30px;
+}
+
+.portfolio-page-container .portfolio-page__load-more {
+  cursor: pointer;
+  margin: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.portfolio-page-container .portfolio-page__load-more img {
+  margin-right: 16px;
+  width: 24px;
+  height: 24px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.portfolio-page-container .portfolio-page__load-more p {
+  display: inline;
+  color: #424551;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 160%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.portfolio-page-container .portfolio-page__load-more:hover p {
+  color: #ff5a30;
+}
+
+.portfolio-page-container .portfolio-page__load-more:hover img {
+  -webkit-transform: rotate(-210deg);
+          transform: rotate(-210deg);
+}
 /*# sourceMappingURL=main.css.map */
