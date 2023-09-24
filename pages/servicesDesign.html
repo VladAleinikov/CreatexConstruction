@@ -185,96 +185,559 @@
           <button class="benefits__btn btn l-btn">Discuss a project</button>
         </div>
       </section>
-          <section class="portfolio">
-      <div class="portfolio-container container">
-        <h2 class="portfolio__title title">Related projects</h2>
-        <div class="slider-btns">
-          <div class="slider__btn disabled" id="slide-portfolio-to-left">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M9.20711 17.2071C8.81658 17.5976 8.18342 17.5976 7.79289 17.2071L3.29289 12.7071C2.90237 12.3166 2.90237 11.6834 3.29289 11.2929L7.79289 6.79289C8.18342 6.40237 8.81658 6.40237 9.20711 6.79289C9.59763 7.18342 9.59763 7.81658 9.20711 8.20711L6.41421 11L20 11C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13L6.41421 13L9.20711 15.7929C9.59763 16.1834 9.59763 16.8166 9.20711 17.2071Z"
-                fill="#1E212C" />
-            </svg>
+      <section class="portfolio">
+        <div class="portfolio-container container">
+          <h2 class="portfolio__title title">Related projects</h2>
+          <div class="slider-btns">
+            <div class="slider__btn disabled" id="slide-portfolio-to-left">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M9.20711 17.2071C8.81658 17.5976 8.18342 17.5976 7.79289 17.2071L3.29289 12.7071C2.90237 12.3166 2.90237 11.6834 3.29289 11.2929L7.79289 6.79289C8.18342 6.40237 8.81658 6.40237 9.20711 6.79289C9.59763 7.18342 9.59763 7.81658 9.20711 8.20711L6.41421 11L20 11C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13L6.41421 13L9.20711 15.7929C9.59763 16.1834 9.59763 16.8166 9.20711 17.2071Z"
+                  fill="#1E212C"
+                />
+              </svg>
+            </div>
+            <div class="slider__btn" id="slide-portfolio-to-right">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M14.7929 6.79289C15.1834 6.40237 15.8166 6.40237 16.2071 6.79289L20.7071 11.2929C21.0976 11.6834 21.0976 12.3166 20.7071 12.7071L16.2071 17.2071C15.8166 17.5976 15.1834 17.5976 14.7929 17.2071C14.4024 16.8166 14.4024 16.1834 14.7929 15.7929L17.5858 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H17.5858L14.7929 8.20711C14.4024 7.81658 14.4024 7.18342 14.7929 6.79289Z"
+                  fill="#1E212C"
+                />
+              </svg>
+            </div>
           </div>
-          <div class="slider__btn" id="slide-portfolio-to-right">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M14.7929 6.79289C15.1834 6.40237 15.8166 6.40237 16.2071 6.79289L20.7071 11.2929C21.0976 11.6834 21.0976 12.3166 20.7071 12.7071L16.2071 17.2071C15.8166 17.5976 15.1834 17.5976 14.7929 17.2071C14.4024 16.8166 14.4024 16.1834 14.7929 15.7929L17.5858 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H17.5858L14.7929 8.20711C14.4024 7.81658 14.4024 7.18342 14.7929 6.79289Z"
-                fill="#1E212C" />
-            </svg>
+          <div class="portfolio__slider">
+            <ul class="portfolio__slides" id="portfolio__slides">
+              <li class="slider__slide" id="portfolio-slide-1">
+                <img
+                  src="../assets/portfolio/kids-bedroom.jpg"
+                  alt="Kids Bedroom With Decorations"
+                />
+                <div class="content">
+                  <h3 class="slide-title title">
+                    Kids Bedroom With Decorations
+                  </h3>
+                  <p class="slide-subtitle subtitle">Apartments & flats</p>
+                  <a href="./project.html" class="slide-btn btn m-btn outline"
+                    >View Project</a
+                  >
+                </div>
+              </li>
+              <li class="slider__slide" id="portfolio-slide-2">
+                <img
+                  src="../assets/portfolio/modern-bedroom.png"
+                  alt="Modern Double Bedroom"
+                />
+                <div class="content">
+                  <h3 class="slide-title title">Modern Double Bedroom</h3>
+                  <p class="slide-subtitle subtitle">Apartments & flats</p>
+                  <a href="./project.html" class="slide-btn btn m-btn outline"
+                    >View Project</a
+                  >
+                </div>
+              </li>
+              <li class="slider__slide" id="portfolio-slide-3">
+                <img
+                  src="../assets/portfolio/scandinavian-interior.jpg"
+                  alt="Scandinavian Style Interior"
+                />
+                <div class="content">
+                  <h3 class="slide-title title">Scandinavian Style Interior</h3>
+                  <p class="slide-subtitle subtitle">Private houses</p>
+                  <a href="./project.html" class="slide-btn btn m-btn outline"
+                    >View Project</a
+                  >
+                </div>
+              </li>
+              <li class="slider__slide" id="portfolio-slide-4">
+                <img
+                  src="../assets/portfolio/kids-bedroom.jpg"
+                  alt="Kids Bedroom With Decorations"
+                />
+                <div class="content">
+                  <h3 class="slide-title title">
+                    Kids Bedroom With Decorations
+                  </h3>
+                  <p class="slide-subtitle subtitle">Apartments & flats</p>
+                  <a href="./project.html" class="slide-btn btn m-btn outline"
+                    >View Project</a
+                  >
+                </div>
+              </li>
+              <li class="slider__slide" id="portfolio-slide-5">
+                <img
+                  src="../assets/portfolio/modern-bedroom.png"
+                  alt="Modern Double Bedroom"
+                />
+                <div class="content">
+                  <h3 class="slide-title title">Modern Double Bedroom</h3>
+                  <p class="slide-subtitle subtitle">Apartments & flats</p>
+                  <a href="./project.html" class="slide-btn btn m-btn outline"
+                    >View Project</a
+                  >
+                </div>
+              </li>
+              <li class="slider__slide" id="portfolio-slide-6">
+                <img
+                  src="../assets/portfolio/scandinavian-interior.jpg"
+                  alt="Scandinavian Style Interior"
+                />
+                <div class="content">
+                  <h3 class="slide-title title">Scandinavian Style Interior</h3>
+                  <p class="slide-subtitle subtitle">Stores & Malls</p>
+                  <a href="./project.html" class="slide-btn btn m-btn outline"
+                    >View Project</a
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="portfolio__learn-more learn-more">
+            <h3 class="learn-more__title title">Explore all our works</h3>
+            <a href="./portfolio.html" class="btn l-btn">View portfolio</a>
           </div>
         </div>
-        <div class="portfolio__slider">
-          <ul class="portfolio__slides" id="portfolio__slides">
-            <li class="slider__slide" id="portfolio-slide-1">
-              <img src="../assets/portfolio/kids-bedroom.jpg" alt="Kids Bedroom With Decorations">
-              <div class="content">
-                <h3 class="slide-title title">Kids Bedroom With Decorations</h3>
-                <p class="slide-subtitle subtitle">Apartments & flats</p>
-                <a href="./project.html" class="slide-btn btn m-btn outline">View Project</a>
-              </div>
+      </section>
+      <section class="pricing">
+        <div class="pricing__container container">
+          <h2 class="pricing__title title">Pricing</h2>
+          <p class="pricing__subtitle subtitle">
+            We offer you three categories of construction.
+          </p>
+          <table class="pricing__table">
+            <tr class="table__row row__title">
+              <td class="table__sell">Items</td>
+              <td class="table__sell">
+                <h3 class="sell__title title">BASIC</h3>
+                <p class="sell__subtitle subtitle">$20 per m2</p>
+              </td>
+              <td class="table__sell">
+                <h3 class="sell__title title">BASIC</h3>
+                <p class="sell__subtitle subtitle">$30 per m2</p>
+              </td>
+              <td class="table__sell">
+                <h3 class="sell__title title">BUSINESS</h3>
+                <p class="sell__subtitle subtitle">$40 per m2</p>
+              </td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__sell">Installation plan</td>
+              <td class="table__sell">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M21.7071 5.29289C22.0976 5.68342 22.0976 6.31658 21.7071 6.70711L9.70711 18.7071C9.31658 19.0976 8.68342 19.0976 8.29289 18.7071L2.29289 12.7071C1.90237 12.3166 1.90237 11.6834 2.29289 11.2929C2.68342 10.9024 3.31658 10.9024 3.70711 11.2929L9 16.5858L20.2929 5.29289C20.6834 4.90237 21.3166 4.90237 21.7071 5.29289Z"
+                    fill="#FF5A30"
+                  />
+                </svg>
+              </td>
+              <td class="table__sell">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M21.7071 5.29289C22.0976 5.68342 22.0976 6.31658 21.7071 6.70711L9.70711 18.7071C9.31658 19.0976 8.68342 19.0976 8.29289 18.7071L2.29289 12.7071C1.90237 12.3166 1.90237 11.6834 2.29289 11.2929C2.68342 10.9024 3.31658 10.9024 3.70711 11.2929L9 16.5858L20.2929 5.29289C20.6834 4.90237 21.3166 4.90237 21.7071 5.29289Z"
+                    fill="#FF5A30"
+                  />
+                </svg>
+              </td>
+              <td class="table__sell">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M21.7071 5.29289C22.0976 5.68342 22.0976 6.31658 21.7071 6.70711L9.70711 18.7071C9.31658 19.0976 8.68342 19.0976 8.29289 18.7071L2.29289 12.7071C1.90237 12.3166 1.90237 11.6834 2.29289 11.2929C2.68342 10.9024 3.31658 10.9024 3.70711 11.2929L9 16.5858L20.2929 5.29289C20.6834 4.90237 21.3166 4.90237 21.7071 5.29289Z"
+                    fill="#FF5A30"
+                  />
+                </svg>
+              </td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__sell">Planning solutions (2-3 options)</td>
+              <td class="table__sell">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M21.7071 5.29289C22.0976 5.68342 22.0976 6.31658 21.7071 6.70711L9.70711 18.7071C9.31658 19.0976 8.68342 19.0976 8.29289 18.7071L2.29289 12.7071C1.90237 12.3166 1.90237 11.6834 2.29289 11.2929C2.68342 10.9024 3.31658 10.9024 3.70711 11.2929L9 16.5858L20.2929 5.29289C20.6834 4.90237 21.3166 4.90237 21.7071 5.29289Z"
+                    fill="#FF5A30"
+                  />
+                </svg>
+              </td>
+              <td class="table__sell">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M21.7071 5.29289C22.0976 5.68342 22.0976 6.31658 21.7071 6.70711L9.70711 18.7071C9.31658 19.0976 8.68342 19.0976 8.29289 18.7071L2.29289 12.7071C1.90237 12.3166 1.90237 11.6834 2.29289 11.2929C2.68342 10.9024 3.31658 10.9024 3.70711 11.2929L9 16.5858L20.2929 5.29289C20.6834 4.90237 21.3166 4.90237 21.7071 5.29289Z"
+                    fill="#FF5A30"
+                  />
+                </svg>
+              </td>
+              <td class="table__sell">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M21.7071 5.29289C22.0976 5.68342 22.0976 6.31658 21.7071 6.70711L9.70711 18.7071C9.31658 19.0976 8.68342 19.0976 8.29289 18.7071L2.29289 12.7071C1.90237 12.3166 1.90237 11.6834 2.29289 11.2929C2.68342 10.9024 3.31658 10.9024 3.70711 11.2929L9 16.5858L20.2929 5.29289C20.6834 4.90237 21.3166 4.90237 21.7071 5.29289Z"
+                    fill="#FF5A30"
+                  />
+                </svg>
+              </td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__sell">Lighting plan</td>
+              <td class="table__sell">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M21.7071 5.29289C22.0976 5.68342 22.0976 6.31658 21.7071 6.70711L9.70711 18.7071C9.31658 19.0976 8.68342 19.0976 8.29289 18.7071L2.29289 12.7071C1.90237 12.3166 1.90237 11.6834 2.29289 11.2929C2.68342 10.9024 3.31658 10.9024 3.70711 11.2929L9 16.5858L20.2929 5.29289C20.6834 4.90237 21.3166 4.90237 21.7071 5.29289Z"
+                    fill="#FF5A30"
+                  />
+                </svg>
+              </td>
+              <td class="table__sell">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M21.7071 5.29289C22.0976 5.68342 22.0976 6.31658 21.7071 6.70711L9.70711 18.7071C9.31658 19.0976 8.68342 19.0976 8.29289 18.7071L2.29289 12.7071C1.90237 12.3166 1.90237 11.6834 2.29289 11.2929C2.68342 10.9024 3.31658 10.9024 3.70711 11.2929L9 16.5858L20.2929 5.29289C20.6834 4.90237 21.3166 4.90237 21.7071 5.29289Z"
+                    fill="#FF5A30"
+                  />
+                </svg>
+              </td>
+              <td class="table__sell">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M21.7071 5.29289C22.0976 5.68342 22.0976 6.31658 21.7071 6.70711L9.70711 18.7071C9.31658 19.0976 8.68342 19.0976 8.29289 18.7071L2.29289 12.7071C1.90237 12.3166 1.90237 11.6834 2.29289 11.2929C2.68342 10.9024 3.31658 10.9024 3.70711 11.2929L9 16.5858L20.2929 5.29289C20.6834 4.90237 21.3166 4.90237 21.7071 5.29289Z"
+                    fill="#FF5A30"
+                  />
+                </svg>
+              </td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__sell">Flooring plan</td>
+              <td class="table__sell">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M21.7071 5.29289C22.0976 5.68342 22.0976 6.31658 21.7071 6.70711L9.70711 18.7071C9.31658 19.0976 8.68342 19.0976 8.29289 18.7071L2.29289 12.7071C1.90237 12.3166 1.90237 11.6834 2.29289 11.2929C2.68342 10.9024 3.31658 10.9024 3.70711 11.2929L9 16.5858L20.2929 5.29289C20.6834 4.90237 21.3166 4.90237 21.7071 5.29289Z"
+                    fill="#FF5A30"
+                  />
+                </svg>
+              </td>
+              <td class="table__sell">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M21.7071 5.29289C22.0976 5.68342 22.0976 6.31658 21.7071 6.70711L9.70711 18.7071C9.31658 19.0976 8.68342 19.0976 8.29289 18.7071L2.29289 12.7071C1.90237 12.3166 1.90237 11.6834 2.29289 11.2929C2.68342 10.9024 3.31658 10.9024 3.70711 11.2929L9 16.5858L20.2929 5.29289C20.6834 4.90237 21.3166 4.90237 21.7071 5.29289Z"
+                    fill="#FF5A30"
+                  />
+                </svg>
+              </td>
+              <td class="table__sell">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M21.7071 5.29289C22.0976 5.68342 22.0976 6.31658 21.7071 6.70711L9.70711 18.7071C9.31658 19.0976 8.68342 19.0976 8.29289 18.7071L2.29289 12.7071C1.90237 12.3166 1.90237 11.6834 2.29289 11.2929C2.68342 10.9024 3.31658 10.9024 3.70711 11.2929L9 16.5858L20.2929 5.29289C20.6834 4.90237 21.3166 4.90237 21.7071 5.29289Z"
+                    fill="#FF5A30"
+                  />
+                </svg>
+              </td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__sell">Heating floor laying scheme</td>
+              <td class="table__sell">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M21.7071 5.29289C22.0976 5.68342 22.0976 6.31658 21.7071 6.70711L9.70711 18.7071C9.31658 19.0976 8.68342 19.0976 8.29289 18.7071L2.29289 12.7071C1.90237 12.3166 1.90237 11.6834 2.29289 11.2929C2.68342 10.9024 3.31658 10.9024 3.70711 11.2929L9 16.5858L20.2929 5.29289C20.6834 4.90237 21.3166 4.90237 21.7071 5.29289Z"
+                    fill="#FF5A30"
+                  />
+                </svg>
+              </td>
+              <td class="table__sell">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M21.7071 5.29289C22.0976 5.68342 22.0976 6.31658 21.7071 6.70711L9.70711 18.7071C9.31658 19.0976 8.68342 19.0976 8.29289 18.7071L2.29289 12.7071C1.90237 12.3166 1.90237 11.6834 2.29289 11.2929C2.68342 10.9024 3.31658 10.9024 3.70711 11.2929L9 16.5858L20.2929 5.29289C20.6834 4.90237 21.3166 4.90237 21.7071 5.29289Z"
+                    fill="#FF5A30"
+                  />
+                </svg>
+              </td>
+              <td class="table__sell">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M21.7071 5.29289C22.0976 5.68342 22.0976 6.31658 21.7071 6.70711L9.70711 18.7071C9.31658 19.0976 8.68342 19.0976 8.29289 18.7071L2.29289 12.7071C1.90237 12.3166 1.90237 11.6834 2.29289 11.2929C2.68342 10.9024 3.31658 10.9024 3.70711 11.2929L9 16.5858L20.2929 5.29289C20.6834 4.90237 21.3166 4.90237 21.7071 5.29289Z"
+                    fill="#FF5A30"
+                  />
+                </svg>
+              </td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__sell">Air conditioner zones layout</td>
+              <td class="table__sell">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M21.7071 5.29289C22.0976 5.68342 22.0976 6.31658 21.7071 6.70711L9.70711 18.7071C9.31658 19.0976 8.68342 19.0976 8.29289 18.7071L2.29289 12.7071C1.90237 12.3166 1.90237 11.6834 2.29289 11.2929C2.68342 10.9024 3.31658 10.9024 3.70711 11.2929L9 16.5858L20.2929 5.29289C20.6834 4.90237 21.3166 4.90237 21.7071 5.29289Z"
+                    fill="#FF5A30"
+                  />
+                </svg>
+              </td>
+              <td class="table__sell">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M21.7071 5.29289C22.0976 5.68342 22.0976 6.31658 21.7071 6.70711L9.70711 18.7071C9.31658 19.0976 8.68342 19.0976 8.29289 18.7071L2.29289 12.7071C1.90237 12.3166 1.90237 11.6834 2.29289 11.2929C2.68342 10.9024 3.31658 10.9024 3.70711 11.2929L9 16.5858L20.2929 5.29289C20.6834 4.90237 21.3166 4.90237 21.7071 5.29289Z"
+                    fill="#FF5A30"
+                  />
+                </svg>
+              </td>
+              <td class="table__sell">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M21.7071 5.29289C22.0976 5.68342 22.0976 6.31658 21.7071 6.70711L9.70711 18.7071C9.31658 19.0976 8.68342 19.0976 8.29289 18.7071L2.29289 12.7071C1.90237 12.3166 1.90237 11.6834 2.29289 11.2929C2.68342 10.9024 3.31658 10.9024 3.70711 11.2929L9 16.5858L20.2929 5.29289C20.6834 4.90237 21.3166 4.90237 21.7071 5.29289Z"
+                    fill="#FF5A30"
+                  />
+                </svg>
+              </td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__sell">3D visualization of all rooms</td>
+              <td class="table__sell">
+                simplified
+              </td>
+              <td class="table__sell">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M21.7071 5.29289C22.0976 5.68342 22.0976 6.31658 21.7071 6.70711L9.70711 18.7071C9.31658 19.0976 8.68342 19.0976 8.29289 18.7071L2.29289 12.7071C1.90237 12.3166 1.90237 11.6834 2.29289 11.2929C2.68342 10.9024 3.31658 10.9024 3.70711 11.2929L9 16.5858L20.2929 5.29289C20.6834 4.90237 21.3166 4.90237 21.7071 5.29289Z"
+                    fill="#FF5A30"
+                  />
+                </svg>
+              </td>
+              <td class="table__sell">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M21.7071 5.29289C22.0976 5.68342 22.0976 6.31658 21.7071 6.70711L9.70711 18.7071C9.31658 19.0976 8.68342 19.0976 8.29289 18.7071L2.29289 12.7071C1.90237 12.3166 1.90237 11.6834 2.29289 11.2929C2.68342 10.9024 3.31658 10.9024 3.70711 11.2929L9 16.5858L20.2929 5.29289C20.6834 4.90237 21.3166 4.90237 21.7071 5.29289Z"
+                    fill="#FF5A30"
+                  />
+                </svg>
+              </td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__sell">Visualization of each room (3-4 angles)</td>
+              <td class="table__sell"></td>
+              <td class="table__sell"></td>
+              <td class="table__sell">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M21.7071 5.29289C22.0976 5.68342 22.0976 6.31658 21.7071 6.70711L9.70711 18.7071C9.31658 19.0976 8.68342 19.0976 8.29289 18.7071L2.29289 12.7071C1.90237 12.3166 1.90237 11.6834 2.29289 11.2929C2.68342 10.9024 3.31658 10.9024 3.70711 11.2929L9 16.5858L20.2929 5.29289C20.6834 4.90237 21.3166 4.90237 21.7071 5.29289Z"
+                    fill="#FF5A30"
+                  />
+                </svg>
+              </td>
+            </tr>
+            <tr class="table__row">
+              <td></td>
+              <td><button class="btn sm-btn outline">send request</button></td>
+              <td><button class="btn sm-btn outline">send request</button></td>
+              <td><button class="btn sm-btn outline">send request</button></td>
+            </tr>
+          </table>
+        </div>
+      </section>
+      <section class="clients">
+        <div class="clients-container container">
+          <h2 class="clients-title title">Supported by 12+ partners</h2>
+          <ul class="clients-list">
+            <li class="client-item">
+              <img src="../assets/partners/InDepth Consulting.png" alt="logo" />
             </li>
-            <li class="slider__slide" id="portfolio-slide-2">
-              <img src="../assets/portfolio/modern-bedroom.png" alt="Modern Double Bedroom">
-              <div class="content">
-                <h3 class="slide-title title">Modern Double Bedroom</h3>
-                <p class="slide-subtitle subtitle">Apartments & flats</p>
-                <a href="./project.html" class="slide-btn btn m-btn outline">View Project</a>
-              </div>
+            <li class="client-item">
+              <img src="../assets/partners/Higher Fit.png" alt="logo" />
             </li>
-            <li class="slider__slide" id="portfolio-slide-3">
-              <img src="../assets/portfolio/scandinavian-interior.jpg" alt="Scandinavian Style Interior">
-              <div class="content">
-                <h3 class="slide-title title">Scandinavian Style Interior</h3>
-                <p class="slide-subtitle subtitle">Private houses</p>
-                <a href="./project.html" class="slide-btn btn m-btn outline">View Project</a>
-              </div>
+            <li class="client-item">
+              <img
+                src="../assets/partners/Sentinal Consulting.png"
+                alt="logo"
+              />
             </li>
-            <li class="slider__slide" id="portfolio-slide-4">
-              <img src="../assets/portfolio/kids-bedroom.jpg" alt="Kids Bedroom With Decorations">
-              <div class="content">
-                <h3 class="slide-title title">Kids Bedroom With Decorations</h3>
-                <p class="slide-subtitle subtitle">Apartments & flats</p>
-                <a href="./project.html" class="slide-btn btn m-btn outline">View Project</a>
-              </div>
+            <li class="client-item">
+              <img src="../assets/partners/Happy Home.png" alt="logo" />
             </li>
-            <li class="slider__slide" id="portfolio-slide-5">
-              <img src="../assets/portfolio/modern-bedroom.png" alt="Modern Double Bedroom">
-              <div class="content">
-                <h3 class="slide-title title">Modern Double Bedroom</h3>
-                <p class="slide-subtitle subtitle">Apartments & flats</p>
-                <a href="./project.html" class="slide-btn btn m-btn outline">View Project</a>
-              </div>
+            <li class="client-item">
+              <img src="../assets/partners/For Sale.png" alt="logo" />
             </li>
-            <li class="slider__slide" id="portfolio-slide-6">
-              <img src="../assets/portfolio/scandinavian-interior.jpg" alt="Scandinavian Style Interior">
-              <div class="content">
-                <h3 class="slide-title title">Scandinavian Style Interior</h3>
-                <p class="slide-subtitle subtitle">Stores & Malls</p>
-                <a href="./project.html" class="slide-btn btn m-btn outline">View Project</a>
-              </div>
+            <li class="client-item">
+              <img src="../assets/partners/Sunset Realty.png" alt="logo" />
             </li>
           </ul>
         </div>
-        <div class="portfolio__learn-more learn-more">
-          <h3 class="learn-more__title title">Explore all our works</h3>
-          <a href="./portfolio.html" class="btn l-btn">View portfolio</a>
-        </div>
-      </div>
-    </section>
-    <section class="clients">
-      <div class="clients-container container">
-        <h2 class="clients-title title">Supported by 12+ partners</h2>
-        <ul class="clients-list">
-          <li class="client-item"><img src="../assets/partners/InDepth Consulting.png" alt="logo"></li>
-          <li class="client-item"><img src="../assets/partners/Higher Fit.png" alt="logo"></li>
-          <li class="client-item"><img src="../assets/partners/Sentinal Consulting.png" alt="logo"></li>
-          <li class="client-item"><img src="../assets/partners/Happy Home.png" alt="logo"></li>
-          <li class="client-item"><img src="../assets/partners/For Sale.png" alt="logo"></li>
-          <li class="client-item"><img src="../assets/partners/Sunset Realty.png" alt="logo"></li>
-        </ul>
-      </div>
-    </section>
+      </section>
       <section class="application">
         <div class="application-container container">
           <form action="" class="aplication__form">
