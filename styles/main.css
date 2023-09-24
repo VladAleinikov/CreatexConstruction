@@ -2297,4 +2297,81 @@ footer {
 .pricing__container .pricing__table .row__btns .btn {
   margin: auto;
 }
+
+.tabs {
+  margin-top: 60px;
+}
+
+.tabs__container .tabs__list {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tabs__container .tabs__list .tabs__item {
+  width: 230px;
+  height: 154px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
+  border-radius: 4px;
+  background: #fff;
+  -webkit-box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.03), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 80px 80px -20px rgba(154, 156, 165, 0.08);
+          box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.03), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 80px 80px -20px rgba(154, 156, 165, 0.08);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.tabs__container .tabs__list .tabs__item svg path {
+  fill: #ff5a30;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.tabs__container .tabs__list .tabs__item .item__title {
+  color: #9a9ca5;
+  font-size: 16px;
+  margin-bottom: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.tabs__container .tabs__list .tabs__item.active, .tabs__container .tabs__list .tabs__item:hover {
+  background: #ff5a30;
+  -webkit-box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.05), 0px 12px 10px -6px rgba(255, 90, 48, 0.08), 0px 26px 24px -10px rgba(255, 90, 48, 0.1), 0px 60px 80px -20px rgba(255, 90, 48, 0.16);
+          box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.05), 0px 12px 10px -6px rgba(255, 90, 48, 0.08), 0px 26px 24px -10px rgba(255, 90, 48, 0.1), 0px 60px 80px -20px rgba(255, 90, 48, 0.16);
+}
+
+.tabs__container .tabs__list .tabs__item.active svg path, .tabs__container .tabs__list .tabs__item:hover svg path {
+  fill: #fff;
+}
+
+.tabs__container .tabs__list .tabs__item.active .item__title, .tabs__container .tabs__list .tabs__item:hover .item__title {
+  color: #fff;
+}
 /*# sourceMappingURL=main.css.map */
