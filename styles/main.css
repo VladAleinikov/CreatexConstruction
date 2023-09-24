@@ -1426,4 +1426,47 @@ footer {
   font-size: 18px;
   padding: 0 112px;
   letter-spacing: 0.5px;
+}
+
+.pricing__container {
+  margin-top: 180px;
+}
+.pricing__container .pricing__table {
+  width: 100%;
+}
+.pricing__container .pricing__table .table__row {
+  width: 100%;
+  height: 58px;
+}
+.pricing__container .pricing__table .table__row .table__sell {
+  text-align: center;
+}
+.pricing__container .pricing__table .table__row .table__sell:nth-child(1) {
+  text-align: start;
+}
+.pricing__container .pricing__table .table__row:nth-child(2n) {
+  background: #f4f5f6;
+}
+.pricing__container .pricing__table .row__title {
+  height: 120px;
+}
+.pricing__container .pricing__table .row__title .table__sell {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 150%;
+}
+.pricing__container .pricing__table .row__title .table__sell .sell__title {
+  font-size: 24px;
+  margin-bottom: 0;
+}
+.pricing__container .pricing__table .row__title .table__sell .sell__subtitle {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.pricing__container .pricing__table .row__btns {
+  height: 100px;
+}
+.pricing__container .pricing__table .row__btns .btn {
+  margin: auto;
 }/*# sourceMappingURL=main.css.map */
