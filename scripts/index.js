@@ -268,3 +268,51 @@ try {
 } catch (error) {
 
 }
+
+
+// history slider on about page
+const timelineItems = [...document.getElementsByClassName("timeline__item")];
+const slideHistoryLeft = document.getElementById("slide-history-to-left");
+const slideHistoryRight = document.getElementById("slide-history-to-right");
+const historySlider = document.getElementById("history__slider");
+let historySlide = 0;
+
+try {
+      slideHistoryRight.addEventListener("click", e => {
+            slideHistoryLeft.classList.remove("disabled")
+            historySlide += 1;
+            timelineItems.map(item => item.classList.remove("active"));
+            timelineItems[historySlide].classList.add("active");
+            historySlider.style.left = (historySlide) * -100 + "%";
+            if (historySlide == 8) {
+                  slideHistoryRight.classList.add("disabled");
+            }
+      })
+      slideHistoryLeft.addEventListener("click", e => {
+            slideHistoryRight.classList.remove("disabled")
+            historySlide -= 1;
+            timelineItems.map(item => item.classList.remove("active"));
+            timelineItems[historySlide].classList.add("active");
+            historySlider.style.left = (historySlide) * -100 + "%";
+            if (historySlide == 0) {
+                  slideHistoryLeft.classList.add("disabled");
+            }
+      })
+      timelineItems.map((timelineItem, id) =>
+            timelineItem.addEventListener("click", e => {
+                  slideHistoryLeft.classList.remove("disabled")
+                  slideHistoryRight.classList.remove("disabled")
+                  historySlide = id;
+                  timelineItems.map(item => item.classList.remove("active"));
+                  timelineItems[historySlide].classList.add("active");
+                  historySlider.style.left = (historySlide) * -100 + "%";
+                  if (historySlide == 0) {
+                        slideHistoryLeft.classList.add("disabled");
+                  }
+                  if (historySlide == 8) {
+                        slideHistoryRight.classList.add("disabled");
+                  }
+            }))
+} catch (error) {
+
+}
