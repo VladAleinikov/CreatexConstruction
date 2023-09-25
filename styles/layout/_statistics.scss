@@ -1,0 +1,42 @@
+.statistics-container {
+      margin-top: 300px;
+
+      .statistics__list {
+            width: 100%;
+            @include flex-row;
+            justify-content: space-between;
+
+            .statistics__item {
+                  @include flex-col;
+                  justify-content: start;
+                  height: 178px;
+
+                  svg {
+                        margin-bottom: 20px;
+                  }
+                  .item__title {
+                        position: relative;
+                        color: $primary;
+                        margin-bottom: 8px;
+
+                        span {
+                              display: inline-block;
+                              position: absolute;
+                              color: $primary;
+                              font-size: 30px;
+                              font-style: normal;
+                              font-weight: 700;
+                              line-height: 130%;
+                              margin-bottom: 10px;
+                              top: 0;
+                        }
+                  }
+                  .item__subtitle {
+                        width: 240px;
+                        color: $gray900;
+                        font-size: 14px;
+                        margin-bottom: 0;
+                  }
+            }
+      }
+}
