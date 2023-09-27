@@ -2033,4 +2033,90 @@ footer {
 
 .map-container {
   margin-top: 200px;
+}
+
+.vacancies-container {
+  margin-top: 200px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  align-items: start;
+}
+.vacancies-container .vacancies__list {
+  min-width: 705px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.vacancies-container .vacancies__list .vacancies__item {
+  width: 100%;
+  height: 125px;
+  padding: 33px 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 4px;
+  border: 1px solid #e5e8ed;
+  box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0), 0px 12px 10px -6px rgba(154, 156, 165, 0), 0px 30px 24px -10px rgba(154, 156, 165, 0), 0px 80px 80px -20px rgba(154, 156, 165, 0);
+  transition: 0.5s;
+}
+.vacancies-container .vacancies__list .vacancies__item .item__vacancy {
+  max-width: 500px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  align-items: start;
+}
+.vacancies-container .vacancies__list .vacancies__item .item__vacancy .vacancy__meta {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.vacancies-container .vacancies__list .vacancies__item .item__vacancy .vacancy__meta p {
+  color: #787a80;
+  font-size: 14px;
+  line-height: 150%;
+}
+.vacancies-container .vacancies__list .vacancies__item .item__vacancy .vacancy__title {
+  text-align: start;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+.vacancies-container .vacancies__list .vacancies__item:hover {
+  box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.03), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 80px 80px -20px rgba(154, 156, 165, 0.08);
+}
+.vacancies-container .vacancies__cta {
+  max-width: 390px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: start;
+}
+.vacancies-container .vacancies__cta .cta__title {
+  text-align: start;
+  font-size: 28px;
+  margin-bottom: 24px;
+}
+.vacancies-container .vacancies__cta .cta__subtitle {
+  text-align: start;
+  font-size: 18px;
+  margin-bottom: 48px;
+}
+.vacancies-container .vacancies__cta .btn {
+  width: 180px;
 }/*# sourceMappingURL=main.css.map */
