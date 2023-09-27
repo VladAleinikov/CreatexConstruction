@@ -2029,4 +2029,8 @@ footer {
 .team-container .team__available-position .available-position__link {
   color: #ff5a30;
   text-decoration-line: underline;
+}
+
+.map-container {
+  margin-top: 200px;
 }/*# sourceMappingURL=main.css.map */
