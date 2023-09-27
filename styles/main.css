@@ -1370,6 +1370,16 @@ footer {
   letter-spacing: 0.5px;
 }
 
+.benefits-white {
+  background: #fff;
+}
+.benefits-white .title {
+  color: #1e212c !important;
+}
+.benefits-white .subtitle {
+  color: #787a80 !important;
+}
+
 .pricing-container {
   margin-top: 180px;
 }
