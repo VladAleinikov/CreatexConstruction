@@ -4333,4 +4333,73 @@ footer {
 .contact-us-container .contact-us__form .form__input-contact-method .custom-radio > input:disabled + span::before {
   background-color: #e9ecef;
 }
+
+.contacts-container {
+  margin-top: 200px;
+}
+
+.contacts-container .contacts__offices {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contacts-container .contacts__offices .office {
+  max-width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.contacts-container .contacts__offices .office .office__title {
+  font-size: 28px;
+}
+
+.contacts-container .contacts__offices .office .office__address, .contacts-container .contacts__offices .office .item__value, .contacts-container .contacts__offices .office .office__map {
+  color: #1e212c;
+  font-size: 16px;
+  line-height: 160%;
+  margin-bottom: 4px;
+}
+
+.contacts-container .contacts__offices .office .office__map {
+  color: #ff5a30;
+  border-bottom: 1px solid #ff5a30;
+  margin-bottom: 20px;
+}
+
+.contacts-container .contacts__offices .office .contacts__item {
+  display: block;
+}
+
+.contacts-container .contacts__offices .office .contacts__item .item__title {
+  color: #787a80;
+}
 /*# sourceMappingURL=main.css.map */
