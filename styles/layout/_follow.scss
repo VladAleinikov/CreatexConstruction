@@ -1,0 +1,19 @@
+.follow-container{
+      margin-top: 200px;
+
+      .follow__social{
+            @include flex-row;
+            gap: 24px;
+
+            .social__item{
+                  display: block;
+
+                  path{
+                        transition: .5s;
+                  }
+                  &:hover path{
+                        fill: $primary;
+                  }
+            }
+      }
+}

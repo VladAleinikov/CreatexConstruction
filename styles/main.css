@@ -4402,4 +4402,38 @@ footer {
 .contacts-container .contacts__offices .office .contacts__item .item__title {
   color: #787a80;
 }
+
+.follow-container {
+  margin-top: 200px;
+}
+
+.follow-container .follow__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 24px;
+}
+
+.follow-container .follow__social .social__item {
+  display: block;
+}
+
+.follow-container .follow__social .social__item path {
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.follow-container .follow__social .social__item:hover path {
+  fill: #ff5a30;
+}
 /*# sourceMappingURL=main.css.map */
