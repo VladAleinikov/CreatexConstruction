@@ -3772,4 +3772,151 @@ footer {
 .news-page .news-container .news__pagination span.active {
   color: #ff5a30;
 }
+
+.article-container {
+  width: 840px;
+  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.article-container span {
+  color: #424551;
+  text-align: justify;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  margin-bottom: 24px;
+}
+
+.article-container span b {
+  color: #1e212c;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.article-container .article__quotation {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  gap: 30px;
+  margin: 24px 0;
+}
+
+.article-container .article__quotation svg {
+  min-width: 28px;
+  min-height: 20px;
+}
+
+.article-container .article__list {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  gap: 4px;
+  margin-bottom: 24px;
+}
+
+.article-container .article__list .article__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
+}
+
+.article-container .article__list .article__item span {
+  margin: 0;
+}
+
+.article-container .article__share {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 36px;
+  gap: 12px;
+}
+
+.article-container .article__share span {
+  margin: 0;
+}
+
+.article-container .article__share svg {
+  cursor: pointer;
+}
+
+.article-container .article__share svg path {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.article-container .article__share svg:hover path {
+  fill: #ff5a30;
+}
 /*# sourceMappingURL=main.css.map */
