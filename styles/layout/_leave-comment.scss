@@ -1,0 +1,36 @@
+.leave-comment-container {
+      margin-top: 120px;
+      max-width: 840px;
+
+      .leave-comment__title {
+            margin-bottom: 48px;
+      }
+      .leave-comment__form {
+            width: 100%;
+            @include flex-row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            .leave-comment__input-name,
+            .leave-comment__input-email {
+                  width: 390px;
+                  margin-bottom: 22px;
+            }
+            .leave-comment__input-comment {
+                  width: 100%;
+                  height: fit-content;
+                  margin-bottom: 48px;
+
+                  textarea {
+                        min-height: 100px;
+                  }
+            }
+            input,
+            textarea {
+                  background: $gray200;
+            }
+            .form__btn{
+                  margin: auto;
+            }
+      }
+}

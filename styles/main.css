@@ -3922,7 +3922,7 @@ footer {
 
 .comments-container {
   margin-top: 80px;
-  max-width: 810px;
+  max-width: 840px;
 }
 
 .comments-container .comments__title {
@@ -4075,5 +4075,63 @@ footer {
 
 .comments-container .comments__list .comments__item .item__comment .comment__reply:hover span {
   color: #ff5a30;
+}
+
+.leave-comment-container {
+  margin-top: 120px;
+  max-width: 840px;
+}
+
+.leave-comment-container .leave-comment__title {
+  margin-bottom: 48px;
+}
+
+.leave-comment-container .leave-comment__form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.leave-comment-container .leave-comment__form .leave-comment__input-name,
+.leave-comment-container .leave-comment__form .leave-comment__input-email {
+  width: 390px;
+  margin-bottom: 22px;
+}
+
+.leave-comment-container .leave-comment__form .leave-comment__input-comment {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-bottom: 48px;
+}
+
+.leave-comment-container .leave-comment__form .leave-comment__input-comment textarea {
+  min-height: 100px;
+}
+
+.leave-comment-container .leave-comment__form input,
+.leave-comment-container .leave-comment__form textarea {
+  background: #f4f5f6;
+}
+
+.leave-comment-container .leave-comment__form .form__btn {
+  margin: auto;
 }
 /*# sourceMappingURL=main.css.map */
