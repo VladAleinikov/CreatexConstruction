@@ -341,9 +341,19 @@ const modalSubscribe = document.getElementById("modal-subscribe");
 
 try {
       ctaSubscribe.addEventListener("click", e => {
-
             body.classList.add("modal-active");
             modalBg.classList.add("active");
             modalSubscribe.classList.add("active");
+      })
+} catch (error) { }
+
+// modal send cv
+const ctaCv = document.getElementById("cta__cv");
+const modalCv = document.getElementById("modal-cv");
+try {
+      ctaCv.addEventListener("click", e => {
+            body.classList.add("modal-active");
+            modalBg.classList.add("active");
+            modalCv.classList.add("active");
       })
 } catch (error) {}
