@@ -198,7 +198,7 @@ a {
   font-weight: normal;
   line-height: 150%;
 }
-.input-block input, .input-block textarea {
+.input-block input, .input-block textarea, .input-block select {
   width: 100%;
   padding: 11px 16px;
   font-size: 14px;
@@ -207,7 +207,7 @@ a {
   border-radius: 4px;
   outline: none;
 }
-.input-block input:focus, .input-block textarea:focus {
+.input-block input:focus, .input-block textarea:focus, .input-block select:focus {
   border: 1px solid #ff5a30;
 }
 
@@ -2196,4 +2196,55 @@ footer {
 }
 .modal-subscribe .modal-subscribe__input-email {
   margin-bottom: 40px;
+}
+
+.modal-cv {
+  width: 486px;
+  height: 781px;
+  top: calc(50% - 390.5px);
+  left: calc(50% - 243px);
+  padding: 48px;
+}
+.modal-cv .modal-cv__input-location select {
+  position: relative;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.modal-cv .modal-cv__input-location select::after {
+  content: "";
+  position: absolute;
+  right: 16px;
+  top: 14px;
+  background-image: url(../../assets/icons/chevrons/Down-chevron.svg);
+}
+.modal-cv .modal-cv__input-covering-letter {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.modal-cv .modal-cv__input-covering-letter textarea {
+  height: 86px;
+}
+.modal-cv .modal-cv__input-file {
+  position: relative;
+  margin-bottom: 40px;
+  max-width: 140px;
+  max-height: 24px;
+}
+.modal-cv .modal-cv__input-file label {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.modal-cv .modal-cv__input-file input {
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  right: 0;
+  max-width: 140px;
+  max-height: 24px;
+  padding: 0;
+  opacity: 0;
 }/*# sourceMappingURL=main.css.map */

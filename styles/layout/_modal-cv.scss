@@ -1,0 +1,47 @@
+.modal-cv {
+      width: 486px;
+      height: 781px;
+      top: calc(50% - 781px / 2);
+      left: calc(50% - 486px / 2);
+      padding: 48px;
+
+      .modal-cv__input-location select {
+            position: relative;
+            appearance: none;
+
+            &::after {
+                  content: "";
+                  position: absolute;
+                  right: 16px;
+                  top: 14px;
+                  background-image: url(../../assets/icons/chevrons/Down-chevron.svg);
+            }
+      }
+      .modal-cv__input-covering-letter {
+            height: fit-content;
+            textarea {
+                  height: 86px;
+            }
+      }
+      .modal-cv__input-file {
+            position: relative;
+            margin-bottom: 40px;
+            max-width: 140px;
+            max-height: 24px;
+
+            label {
+                  @include flex-row;
+                  gap: 12px;
+            }
+            input {
+                  cursor: pointer;
+                  position: absolute;
+                  left: 0;
+                  right: 0;
+                  max-width: 140px;
+                  max-height: 24px;
+                  padding: 0;
+                  opacity: 0;
+            }
+      }
+}
