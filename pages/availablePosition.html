@@ -333,8 +333,10 @@
               Send your CV or subscribe to our newsletter to receive information
               about new vacancies.
             </p>
-            <div class="cta__subscribe btn l-btn outline">subscribe</div>
-            <div class="cta__cv btn l-btn">send cv</div>
+            <div class="cta__subscribe btn l-btn outline" id="cta__subscribe">
+              subscribe
+            </div>
+            <div class="cta__cv btn l-btn" id="cta__cv">send cv</div>
           </div>
         </div>
       </section>
@@ -632,19 +634,30 @@
         </svg>
       </a>
     </div>
-    <div class="modal-bg"></div>
-    <div class="modal-subscribe modal">
-      <button class="modal-subscribe modal-close"><img src="../assets/icons/plus minus cross/Cross.svg" alt="close"></button>
+    <div class="modal-bg" id="modal-bg"></div>
+    <div class="modal-subscribe modal" id="modal-subscribe">
+      <button class="modal-subscribe__close modal-close">
+        <img src="../assets/icons/plus minus cross/Cross.svg" alt="close" />
+      </button>
       <h2 class="modal-subscribe__title title">Subscribe to our newsletter</h2>
       <div class="modal-subscribe__input-name input-block">
         <label for="modal-subscribe__input-name">Name*</label>
-        <input type="text" name="modal-subscribe__input-name" placeholder="Your name">
+        <input
+          type="text"
+          name="modal-subscribe__input-name"
+          placeholder="Your name"
+        />
       </div>
       <div class="modal-subscribe__input-email input-block">
         <label for="modal-subscribe__input-email">Email*</label>
-        <input type="text" name="modal-subscribe__input-email" placeholder="Your working email">
+        <input
+          type="text"
+          name="modal-subscribe__input-email"
+          placeholder="Your working email"
+        />
       </div>
       <button class="modal-subscribe-btn btn l-btn">send</button>
     </div>
   </body>
+  <script src="../scripts/index.js"></script>
 </html>

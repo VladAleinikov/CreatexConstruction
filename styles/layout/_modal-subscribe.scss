@@ -1,0 +1,21 @@
+.modal-subscribe {
+      width: 486px;
+      height: 412px;
+      top: calc(50% - 412px / 2);
+      left: calc(50% - 486px / 2);
+      padding: 48px;
+
+      .modal-subscribe__title{
+            font-size: 28px;
+            margin-bottom: 24px;
+      }
+      .modal-subscribe__input-name{
+            margin-bottom: 20px;
+      }
+      .modal-subscribe__input-email{
+            margin-bottom: 40px;
+      }
+      .modal-subscribe-btn{
+            width: 100%;
+      }
+}

@@ -13,6 +13,10 @@
 body {
   position: relative;
 }
+body.modal-active {
+  height: 100vh;
+  overflow: hidden;
+}
 
 img {
   width: 100%;
@@ -442,6 +446,48 @@ a {
   width: fit-content;
   height: 600px;
   z-index: -1;
+}
+
+.modal-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(30, 33, 44, 0.75);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+.modal-bg.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal {
+  position: fixed;
+  border-radius: 4px;
+  border: 1px solid #e5e8ed;
+  background: #fff;
+  box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.05), 0px 12px 10px -6px rgba(30, 33, 44, 0.08), 0px 26px 24px -10px rgba(30, 33, 44, 0.1), 0px 60px 80px -20px rgba(30, 33, 44, 0.16);
+  z-index: 10000;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+.modal .modal-close {
+  cursor: pointer;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  background: none;
+}
+.modal.active {
+  opacity: 1;
+  visibility: visible;
 }
 
 .header {
@@ -2129,4 +2175,25 @@ footer {
 }
 .vacancies-container .vacancies__cta .btn {
   width: 180px;
+}
+
+.modal-subscribe {
+  width: 486px;
+  height: 412px;
+  top: calc(50% - 206px);
+  left: calc(50% - 243px);
+  padding: 48px;
+}
+.modal-subscribe .modal-subscribe__title {
+  font-size: 28px;
+  margin-bottom: 24px;
+}
+.modal-subscribe .modal-subscribe__input-name {
+  margin-bottom: 20px;
+}
+.modal-subscribe .modal-subscribe__input-email {
+  margin-bottom: 40px;
+}
+.modal-subscribe .modal-subscribe-btn {
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */

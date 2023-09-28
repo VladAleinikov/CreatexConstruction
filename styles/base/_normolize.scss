@@ -10,6 +10,11 @@
 }
 body {
       position: relative;
+
+      &.modal-active {
+            height: 100vh;
+            overflow: hidden;
+      }
 }
 img {
       width: 100%;

@@ -316,3 +316,34 @@ try {
 } catch (error) {
 
 }
+
+// modal
+const body = document.body;
+const modalBg = document.getElementById("modal-bg");
+const closeModal = [...document.getElementsByClassName("modal-close")];
+const modalWindow = [...document.getElementsByClassName("modal")];
+const closeModalEvent = () => {
+      body.classList.remove("modal-active");
+      modalBg.classList.remove("active");
+      modalWindow.map(modal => modal.classList.remove("active"));
+
+}
+try {
+      modalBg.addEventListener("click", e => { closeModalEvent() });
+      closeModal.map(closeModalItem => { closeModalItem.addEventListener("click", e => { closeModalEvent() }) });
+} catch (error) {}
+
+
+
+// modal subscribe
+const ctaSubscribe = document.getElementById("cta__subscribe");
+const modalSubscribe = document.getElementById("modal-subscribe");
+
+try {
+      ctaSubscribe.addEventListener("click", e => {
+
+            body.classList.add("modal-active");
+            modalBg.classList.add("active");
+            modalSubscribe.classList.add("active");
+      })
+} catch (error) {}
