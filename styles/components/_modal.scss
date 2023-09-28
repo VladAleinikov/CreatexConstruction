@@ -39,6 +39,16 @@
             height: 24px;
             background: none;
       }
+      .title{
+            font-size: 28px;
+            margin-bottom: 24px;
+      }
+      .input-block{
+            margin-bottom: 20px;
+      }
+      .btn{
+            width: 100%;
+      }
       &.active {
             opacity: 1;
             visibility: visible;

@@ -485,6 +485,16 @@ a {
   height: 24px;
   background: none;
 }
+.modal .title {
+  font-size: 28px;
+  margin-bottom: 24px;
+}
+.modal .input-block {
+  margin-bottom: 20px;
+}
+.modal .btn {
+  width: 100%;
+}
 .modal.active {
   opacity: 1;
   visibility: visible;
@@ -2184,16 +2194,6 @@ footer {
   left: calc(50% - 243px);
   padding: 48px;
 }
-.modal-subscribe .modal-subscribe__title {
-  font-size: 28px;
-  margin-bottom: 24px;
-}
-.modal-subscribe .modal-subscribe__input-name {
-  margin-bottom: 20px;
-}
 .modal-subscribe .modal-subscribe__input-email {
   margin-bottom: 40px;
-}
-.modal-subscribe .modal-subscribe-btn {
-  width: 100%;
 }/*# sourceMappingURL=main.css.map */
