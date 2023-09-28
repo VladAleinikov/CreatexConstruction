@@ -1,0 +1,118 @@
+.contact-us-container {
+      margin-top: 330px;
+      @include flex-row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      .contact-us__title,
+      .contact-us__subtitle {
+            width: 100%;
+      }
+      .contact-us__img {
+            width: 495px;
+            height: 586px;
+      }
+      .contact-us__form {
+            width: 600px;
+            @include flex-row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            .input-block {
+                  width: 285px;
+                  margin-bottom: 24px;
+            }
+            label{
+                  color: $gray800;
+            }
+            .form__input-message{
+                  width: 100%;
+                  height: fit-content;
+
+                  textarea{
+                        height: 128px;
+                  }
+            }
+            .form__checkbox{
+                  width: 315px;
+            }
+            .form__input-contact-method {
+                  width: 285px;
+                  @include flex-row;
+                  justify-content: start;
+                  flex-wrap: wrap;
+
+                  .input-contact-method__title {
+                        width: 100%;
+                        text-align: start;
+                        color: $gray800;
+                        font-size: 16px;
+                        line-height: 160%;
+                        margin-bottom: 20px;
+                  }
+                  label{
+                        @include flex-row;
+                        gap: 12px;
+                        margin-right: 24px;
+                  }
+                  /* для элемента input c type="radio" */
+                  .custom-radio > input {
+                        position: absolute;
+                        z-index: -1;
+                        opacity: 0;
+                  }
+
+                  /* для элемента label связанного с .custom-radio */
+                  .custom-radio > span {
+                        display: inline-flex;
+                        align-items: center;
+                        user-select: none;
+                  }
+
+                  /* создание в label псевдоэлемента  before со следующими стилями */
+                  .custom-radio > span::before {
+                        content: "";
+                        display: inline-block;
+                        width: 1em;
+                        height: 1em;
+                        flex-shrink: 0;
+                        flex-grow: 0;
+                        border: 1px solid #adb5bd;
+                        border-radius: 50%;
+                        margin-right: 0.5em;
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                        background-size: 50% 50%;
+                  }
+
+                  /* стили при наведении курсора на радио */
+                  .custom-radio > input:not(:disabled):not(:checked) + span:hover::before {
+                        border-color: $primary;
+                  }
+
+                  /* стили для активной радиокнопки (при нажатии на неё) */
+                  .custom-radio > input:not(:disabled):active + span::before {
+                        background-color: rgba($primary, .5);
+                        border-color: rgba($primary, .5);
+                  }
+
+
+                  /* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
+                  .custom-radio > input:focus:not(:checked) + span::before {
+                        border-color: #80bdff;
+                  }
+
+                  /* стили для радиокнопки, находящейся в состоянии checked */
+                  .custom-radio > input:checked + span::before {
+                        border-color: $primary;
+                        background-color: $primary;
+                        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+                  }
+
+                  /* стили для радиокнопки, находящейся в состоянии disabled */
+                  .custom-radio > input:disabled + span::before {
+                        background-color: #e9ecef;
+                  }
+            }
+      }
+}

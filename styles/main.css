@@ -4138,4 +4138,199 @@ footer {
 .leave-comment-container .leave-comment__form .form__btn {
   margin: auto;
 }
+
+.contact-us-container {
+  margin-top: 330px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contact-us-container .contact-us__title,
+.contact-us-container .contact-us__subtitle {
+  width: 100%;
+}
+
+.contact-us-container .contact-us__img {
+  width: 495px;
+  height: 586px;
+}
+
+.contact-us-container .contact-us__form {
+  width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contact-us-container .contact-us__form .input-block {
+  width: 285px;
+  margin-bottom: 24px;
+}
+
+.contact-us-container .contact-us__form label {
+  color: #424551;
+}
+
+.contact-us-container .contact-us__form .form__input-message {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.contact-us-container .contact-us__form .form__input-message textarea {
+  height: 128px;
+}
+
+.contact-us-container .contact-us__form .form__checkbox {
+  width: 315px;
+}
+
+.contact-us-container .contact-us__form .form__input-contact-method {
+  width: 285px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  /* для элемента input c type="radio" */
+  /* для элемента label связанного с .custom-radio */
+  /* создание в label псевдоэлемента  before со следующими стилями */
+  /* стили при наведении курсора на радио */
+  /* стили для активной радиокнопки (при нажатии на неё) */
+  /* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
+  /* стили для радиокнопки, находящейся в состоянии checked */
+  /* стили для радиокнопки, находящейся в состоянии disabled */
+}
+
+.contact-us-container .contact-us__form .form__input-contact-method .input-contact-method__title {
+  width: 100%;
+  text-align: start;
+  color: #424551;
+  font-size: 16px;
+  line-height: 160%;
+  margin-bottom: 20px;
+}
+
+.contact-us-container .contact-us__form .form__input-contact-method label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12px;
+  margin-right: 24px;
+}
+
+.contact-us-container .contact-us__form .form__input-contact-method .custom-radio > input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.contact-us-container .contact-us__form .form__input-contact-method .custom-radio > span {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.contact-us-container .contact-us__form .form__input-contact-method .custom-radio > span::before {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  border: 1px solid #adb5bd;
+  border-radius: 50%;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+.contact-us-container .contact-us__form .form__input-contact-method .custom-radio > input:not(:disabled):not(:checked) + span:hover::before {
+  border-color: #ff5a30;
+}
+
+.contact-us-container .contact-us__form .form__input-contact-method .custom-radio > input:not(:disabled):active + span::before {
+  background-color: rgba(255, 90, 48, 0.5);
+  border-color: rgba(255, 90, 48, 0.5);
+}
+
+.contact-us-container .contact-us__form .form__input-contact-method .custom-radio > input:focus:not(:checked) + span::before {
+  border-color: #80bdff;
+}
+
+.contact-us-container .contact-us__form .form__input-contact-method .custom-radio > input:checked + span::before {
+  border-color: #ff5a30;
+  background-color: #ff5a30;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+}
+
+.contact-us-container .contact-us__form .form__input-contact-method .custom-radio > input:disabled + span::before {
+  background-color: #e9ecef;
+}
 /*# sourceMappingURL=main.css.map */
