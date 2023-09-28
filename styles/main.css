@@ -3919,4 +3919,161 @@ footer {
 .article-container .article__share svg:hover path {
   fill: #ff5a30;
 }
+
+.comments-container {
+  margin-top: 80px;
+  max-width: 810px;
+}
+
+.comments-container .comments__title {
+  margin-bottom: 80px;
+}
+
+.comments-container .comments__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  gap: 60px;
+}
+
+.comments-container .comments__list .comments__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  gap: 30px;
+}
+
+.comments-container .comments__list .comments__item .item__user {
+  min-width: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  gap: 8px;
+}
+
+.comments-container .comments__list .comments__item .item__user .user__name {
+  color: #1e212c;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.comments-container .comments__list .comments__item .item__user .user__date {
+  color: #787a80;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.comments-container .comments__list .comments__item .item__comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  gap: 16px;
+}
+
+.comments-container .comments__list .comments__item .item__comment .comment__text {
+  color: #424551;
+  font-size: 16px;
+  line-height: 160%;
+}
+
+.comments-container .comments__list .comments__item .item__comment .comment__text .text__reply-to {
+  color: #ff5a30;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 160%;
+}
+
+.comments-container .comments__list .comments__item .item__comment .comment__reply {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+}
+
+.comments-container .comments__list .comments__item .item__comment .comment__reply path {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.comments-container .comments__list .comments__item .item__comment .comment__reply span {
+  color: #787a80;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.comments-container .comments__list .comments__item .item__comment .comment__reply:hover path {
+  fill: #ff5a30;
+}
+
+.comments-container .comments__list .comments__item .item__comment .comment__reply:hover span {
+  color: #ff5a30;
+}
 /*# sourceMappingURL=main.css.map */

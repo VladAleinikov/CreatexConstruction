@@ -1,0 +1,81 @@
+.comments-container {
+      margin-top: 80px;
+      max-width: 810px;
+
+      .comments__title {
+            margin-bottom: 80px;
+      }
+      .comments__list {
+            @include flex-col;
+            align-items: start;
+            gap: 60px;
+
+            .comments__item {
+                  @include flex-row;
+                  align-items: start;
+                  gap: 30px;
+
+                  .item__user {
+                        min-width: 150px;
+                        @include flex-col;
+                        align-items: start;
+                        gap: 8px;
+
+                        .user__name {
+                              color: $gray900;
+                              font-size: 18px;
+                              font-weight: 700;
+                              line-height: 150%;
+                        }
+                        .user__date {
+                              color: $gray700;
+                              font-size: 14px;
+                              line-height: 150%;
+                        }
+                  }
+                  .item__comment {
+                        @include flex-col;
+                        align-items: start;
+                        gap: 16px;
+
+                        .comment__text {
+                              color: $gray800;
+                              font-size: 16px;
+                              line-height: 160%;
+
+                              .text__reply-to {
+                                    color: $primary;
+                                    font-size: 16px;
+                                    font-weight: 700;
+                                    line-height: 160%;
+                              }
+                        }
+                        .comment__reply {
+                              cursor: pointer;
+                              @include flex-row;
+                              gap: 8px;
+
+                              path {
+                                    transition: 0.5s;
+                              }
+                              span {
+                                    color: $gray700;
+                                    font-size: 14px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: 150%;
+                                    transition: 0.5s;
+                              }
+                              &:hover{
+                                    path{
+                                          fill: $primary;
+                                    }
+                                    span{
+                                          color: $primary;
+                                    }
+                              }
+                        }
+                  }
+            }
+      }
+}
