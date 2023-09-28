@@ -123,11 +123,21 @@ a {
 }
 
 .hero__slider .slider__slide {
+  position: relative;
   padding-top: 220px;
   padding-bottom: 355px;
   width: 100%;
   height: 100%;
-  background-image: url(../../assets/background/slide-bg.jpg);
+  z-index: -2;
+}
+
+.hero__slider .slider__slide .slide__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
 .hero__slider .slider__slide .slider__title {
@@ -1662,8 +1672,20 @@ a {
 }
 
 .application {
+  position: relative;
   margin-top: 120px;
-  background-image: url(../../assets/background/application-bg.jpg);
+  z-index: -2;
+}
+
+.application .application__bg {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .application .application-container {
@@ -4405,6 +4427,7 @@ footer {
 
 .follow-container {
   margin-top: 200px;
+  margin-bottom: 120px;
 }
 
 .follow-container .follow__social {
